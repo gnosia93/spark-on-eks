@@ -54,8 +54,11 @@ Password:
 
 ### 3. 노트북 실행 ###
 
+주피터 랩에서 다음 코드를 아래 코드를 실행해서 spark 및 scala 의 동작여부를 확인한다.
 ![](https://github.com/gnosia93/spark-on-eks/blob/main/images/scala-spark.png)
 
+스파크 웹 UI (http://localhost:4041)를 통해 스파크의 환경 변수를 확인한다.
+![](https://github.com/gnosia93/spark-on-eks/blob/main/images/spark-web-ui.png)
 
 ## 참고자료 ##
 
