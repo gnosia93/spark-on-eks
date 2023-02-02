@@ -45,4 +45,10 @@ Downloading and Extracting Packages
 Preparing transaction: done
 Verifying transaction: done
 Executing transaction: done
+$
+
+$ sudo python -m spylon_kernel install
+Password:
+[InstallKernelSpec] Installed kernelspec spylon-kernel in /usr/local/share/jupyter/kernels/spylon-kernel
 ```
+
