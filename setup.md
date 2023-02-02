@@ -55,3 +55,4 @@ Password:
 ## 참고자료 ##
 
 * [Set up a local Pyspark/Scala Spark Environment with Jupyter on Mac](https://www.youtube.com/watch?v=kSYtgiBIO2k)
+* [HomeBrew 설치](https://brew.sh/index_ko)
