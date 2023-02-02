@@ -16,3 +16,10 @@ $ brew upgrade eksctl && { brew link --overwrite eksctl; } || { brew tap weavewo
 $ eksctl version
 0.127.0
 ```
+
+
+### 3. eks 클러스터 생성 ###
+
+```
+$ eksctl create cluster --name spark-on-eks --region ap-northeast-2
+```
