@@ -134,6 +134,17 @@ ip-192-168-94-56.ap-northeast-2.compute.internal    Ready    <none>   15m     v1
 ### (Optional) 6. 노드그룹 교체 ###
 ```
 $ eksctl delete nodegroup --cluster spark-on-eks --name ng-2560a3f5
+2023-02-02 19:55:50 [ℹ]  1 nodegroup (ng-2560a3f5) was included (based on the include/exclude rules)
+2023-02-02 19:55:50 [ℹ]  will drain 1 nodegroup(s) in cluster "spark-on-eks"
+2023-02-02 19:55:50 [ℹ]  starting parallel draining, max in-flight of 1
+2023-02-02 19:55:50 [ℹ]  cordon node "ip-192-168-31-233.ap-northeast-2.compute.internal"
+2023-02-02 19:55:50 [ℹ]  cordon node "ip-192-168-60-56.ap-northeast-2.compute.internal"
+2023-02-02 19:56:01 [✔]  drained all nodes: [ip-192-168-31-233.ap-northeast-2.compute.internal ip-192-168-60-56.ap-northeast-2.compute.internal]
+2023-02-02 19:56:01 [ℹ]  will delete 1 nodegroups from cluster "spark-on-eks"
+2023-02-02 19:56:02 [ℹ]  1 task: { 1 task: { delete nodegroup "ng-2560a3f5" [async] } }
+2023-02-02 19:56:03 [ℹ]  will delete stack "eksctl-spark-on-eks-nodegroup-ng-2560a3f5"
+2023-02-02 19:56:03 [ℹ]  will delete 0 nodegroups from auth ConfigMap in cluster "spark-on-eks"
+2023-02-02 19:56:03 [✔]  deleted 1 nodegroup(s) from cluster "spark-on-eks"
 
 $ kubectl get nodes -o wide
 NAME                                                STATUS   ROLES    AGE   VERSION               INTERNAL-IP      EXTERNAL-IP     OS-IMAGE         KERNEL-VERSION                 CONTAINER-RUNTIME
