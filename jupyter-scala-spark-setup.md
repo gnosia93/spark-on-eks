@@ -54,6 +54,7 @@ Password:
 
 ### 3. 노트북 실행 ###
 
+![](https://github.com/gnosia93/spark-on-eks/blob/main/images/scala-spark.png)
 
 
 ## 참고자료 ##
