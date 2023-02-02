@@ -105,6 +105,8 @@ kube-system   kube-proxy-j4fpj          1/1     Running   0          4m26s
 ### (Optional) 5. 노드 그룹 생성 ###
 
 self-managed 노드그룹을 생성하고, 키페어(aws-kp)로 로그인이 가능이 가능하도록 한다.
+
+https://aws.amazon.com/ec2/instance-types/t3/
 ```
 $ eksctl create nodegroup \
   --cluster spark-on-eks \
