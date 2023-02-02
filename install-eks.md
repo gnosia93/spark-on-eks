@@ -134,6 +134,23 @@ ip-192-168-94-56.ap-northeast-2.compute.internal    Ready    <none>   15m     v1
 ### (Optional) 6. 노드그룹 교체 ###
 ```
 $ eksctl delete nodegroup --cluster spark-on-eks --name ng-2560a3f5
+
+ % kubectl get nodes -o wide
+NAME                                                STATUS   ROLES    AGE   VERSION               INTERNAL-IP      EXTERNAL-IP     OS-IMAGE         KERNEL-VERSION                 CONTAINER-RUNTIME
+ip-192-168-21-146.ap-northeast-2.compute.internal   Ready    <none>   22m   v1.24.9-eks-49d8fe8   192.168.21.146   54.180.99.166   Amazon Linux 2   5.4.228-131.415.amzn2.x86_64   containerd://1.6.6
+ip-192-168-56-158.ap-northeast-2.compute.internal   Ready    <none>   22m   v1.24.9-eks-49d8fe8   192.168.56.158   52.78.166.5     Amazon Linux 2   5.4.228-131.415.amzn2.x86_64   containerd://1.6.6
+ip-192-168-94-56.ap-northeast-2.compute.internal    Ready    <none>   22m   v1.24.9-eks-49d8fe8   192.168.94.56    3.38.147.111    Amazon Linux 2   5.4.228-131.415.amzn2.x86_64   containerd://1.6.6
+
+$ kubectl get pods -A -o wide
+NAMESPACE     NAME                      READY   STATUS    RESTARTS   AGE     IP               NODE                                                NOMINATED NODE   READINESS GATES
+kube-system   aws-node-8gv88            1/1     Running   0          23m     192.168.21.146   ip-192-168-21-146.ap-northeast-2.compute.internal   <none>           <none>
+kube-system   aws-node-pbpwm            1/1     Running   0          23m     192.168.94.56    ip-192-168-94-56.ap-northeast-2.compute.internal    <none>           <none>
+kube-system   aws-node-qvrxd            1/1     Running   0          23m     192.168.56.158   ip-192-168-56-158.ap-northeast-2.compute.internal   <none>           <none>
+kube-system   coredns-dc4979556-6zllg   1/1     Running   0          4m57s   192.168.74.110   ip-192-168-94-56.ap-northeast-2.compute.internal    <none>           <none>
+kube-system   coredns-dc4979556-nv7rq   1/1     Running   0          4m57s   192.168.52.85    ip-192-168-56-158.ap-northeast-2.compute.internal   <none>           <none>
+kube-system   kube-proxy-48gdt          1/1     Running   0          23m     192.168.56.158   ip-192-168-56-158.ap-northeast-2.compute.internal   <none>           <none>
+kube-system   kube-proxy-d7r62          1/1     Running   0          23m     192.168.94.56    ip-192-168-94-56.ap-northeast-2.compute.internal    <none>           <none>
+kube-system   kube-proxy-s4zpz          1/1     Running   0          23m     192.168.21.146   ip-192-168-21-146.ap-northeast-2.compute.internal   <none>           <none>
 ```
 
 
