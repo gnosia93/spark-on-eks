@@ -1,7 +1,6 @@
-### 1. HomeBrew 설치 ###
+### 1. Anaconda 설치 ###
 
 ```
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ### 2. spylon-kernel ###
