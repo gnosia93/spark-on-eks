@@ -23,3 +23,4 @@ $ eksctl version
 ```
 $ eksctl create cluster --name spark-on-eks --region ap-northeast-2
 ```
+VPC 를 비롯한 서브넷, 시큐리티 그룹 등과 같은 AWS 리소스가 자동으로 생성된다.
