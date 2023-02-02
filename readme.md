@@ -8,7 +8,3 @@
 * [2. EKS 설치하기](https://github.com/gnosia93/spark-on-eks/blob/main/install-eks.md)
 
 
-## 참고자료 ##
-
-*  https://spark.apache.org/docs/latest/running-on-kubernetes.html
-*  https://spark.apache.org/docs/latest/configuration.html
