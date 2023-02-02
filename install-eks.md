@@ -109,7 +109,7 @@ self-managed 노드그룹을 생성하고, 키페어(aws-kp)로 로그인이 가
 $ eksctl create nodegroup \
   --cluster spark-on-eks \
   --name spark-ng \
-  --node-type t3.medium \
+  --node-type t3.xlarge	 \
   --nodes 3 \
   --nodes-min 1 \
   --nodes-max 4 \
