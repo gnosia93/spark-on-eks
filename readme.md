@@ -3,7 +3,7 @@
 
 ## 실습순서 ##
 
-* #1 [주피터 스파크커널 설정](https://github.com/gnosia93/spark-on-eks/blob/main/jupyter-scala-spark-setup.md)
+* [1. 주피터 스파크커널 설정](https://github.com/gnosia93/spark-on-eks/blob/main/jupyter-scala-spark-setup.md)
 
 ## 참고자료 ##
 
