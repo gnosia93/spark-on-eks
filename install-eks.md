@@ -129,6 +129,8 @@ ip-192-168-60-56.ap-northeast-2.compute.internal    Ready    <none>   3h36m   v1
 ip-192-168-94-56.ap-northeast-2.compute.internal    Ready    <none>   15m     v1.24.9-eks-49d8fe8
 ```
 
+![](https://github.com/gnosia93/spark-on-eks/blob/main/images/eks-nodegroup-1.png)
+
 ### (Optional) 6. 노드그룹 교체 ###
 ```
 $ eksctl delete nodegroup --cluster spark-on-eks --name ng-2560a3f5
