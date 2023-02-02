@@ -114,6 +114,11 @@ $ eksctl create nodegroup \
   --ssh-access \
   --managed=false \
   --ssh-public-key aws-kp
+  
+$ eksctl get nodegroup --cluster=spark-on-eks
+CLUSTER		NODEGROUP	STATUS		CREATED			MIN SIZE	MAX SIZE	DESIRED CAPACITY	INSTANCE TYPE	IMAGE ID		ASG NAME							TYPE
+spark-on-eks	ng-2560a3f5	ACTIVE		2023-02-02T07:16:10Z	2		2		2			m5.large	AL2_x86_64		eks-ng-2560a3f5-d4c3087d-c634-f390-4ab1-f51f5dbb8ada		managed
+spark-on-eks	spark-ng	CREATE_COMPLETE	2023-02-02T10:32:08Z	1		4		3			t3.medium	ami-0387dcacac4a946f3	eksctl-spark-on-eks-nodegroup-spark-ng-NodeGroup-DSN8A8DG1ZR	unmanaged
 ```
 
 
