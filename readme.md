@@ -7,4 +7,4 @@
 
 * [2. EKS 설치하기](https://github.com/gnosia93/spark-on-eks/blob/main/install-eks.md)
 
-
+* [3. 스파크 어플리케이션 배포](https://github.com/gnosia93/spark-on-eks/blob/main/install-eks.md)
