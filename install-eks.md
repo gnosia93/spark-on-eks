@@ -117,3 +117,7 @@ $ eksctl create nodegroup \
 ```
 
 
+
+## 참고자료 ##
+
+* https://stackoverflow.com/questions/64059038/the-results-of-aws-eks-list-nodegroups-and-eksctl-get-nodegroups-are-inconsi
