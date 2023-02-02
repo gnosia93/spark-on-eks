@@ -1,10 +1,10 @@
-* homebrew 설치
+### 1. HomeBrew 설치 ###
 
 ```
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-* spylon-kernel 설치
+### 2. spylon-kernel ###
 ```
 $ conda install -y -c conda-forge spylon-kernel
 Collecting package metadata (current_repodata.json): done
