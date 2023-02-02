@@ -99,3 +99,21 @@ kube-system   coredns-dc4979556-p547d   1/1     Running   0          12m
 kube-system   kube-proxy-4lz65          1/1     Running   0          4m28s
 kube-system   kube-proxy-j4fpj          1/1     Running   0          4m26s
 ```
+
+
+
+### (Optional) 5. 노드 그룹 생성 ###
+```
+$ eksctl create nodegroup \
+  --cluster spark-on-eks \
+  --name spark-ng \
+  --node-type t3.medium \
+  --nodes 3 \
+  --nodes-min 1 \
+  --nodes-max 4 \
+  --ssh-access \
+  --managed=false \
+  --ssh-public-key aws-kp
+```
+
+
