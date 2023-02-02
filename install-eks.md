@@ -81,3 +81,21 @@ $ eksctl create cluster --name spark-on-eks --region ap-northeast-2
 $
 ```
 VPC 를 비롯한 서브넷, 시큐리티 그룹 등과 같은 AWS 리소스가 자동으로 생성된다.
+
+
+### 4. 클러스터 생성 확인 ###
+```
+$ kubectl get nodes
+NAME                                                STATUS   ROLES    AGE     VERSION
+ip-192-168-31-233.ap-northeast-2.compute.internal   Ready    <none>   4m10s   v1.24.9-eks-49d8fe8
+ip-192-168-60-56.ap-northeast-2.compute.internal    Ready    <none>   4m8s    v1.24.9-eks-49d8fe8
+$
+$ kubectl get pods -A
+NAMESPACE     NAME                      READY   STATUS    RESTARTS   AGE
+kube-system   aws-node-l7b4d            1/1     Running   0          4m28s
+kube-system   aws-node-z8l8s            1/1     Running   0          4m26s
+kube-system   coredns-dc4979556-mp8vm   1/1     Running   0          12m
+kube-system   coredns-dc4979556-p547d   1/1     Running   0          12m
+kube-system   kube-proxy-4lz65          1/1     Running   0          4m28s
+kube-system   kube-proxy-j4fpj          1/1     Running   0          4m26s
+```
