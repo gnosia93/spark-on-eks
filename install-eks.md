@@ -135,7 +135,7 @@ ip-192-168-94-56.ap-northeast-2.compute.internal    Ready    <none>   15m     v1
 ```
 $ eksctl delete nodegroup --cluster spark-on-eks --name ng-2560a3f5
 
- % kubectl get nodes -o wide
+$ kubectl get nodes -o wide
 NAME                                                STATUS   ROLES    AGE   VERSION               INTERNAL-IP      EXTERNAL-IP     OS-IMAGE         KERNEL-VERSION                 CONTAINER-RUNTIME
 ip-192-168-21-146.ap-northeast-2.compute.internal   Ready    <none>   22m   v1.24.9-eks-49d8fe8   192.168.21.146   54.180.99.166   Amazon Linux 2   5.4.228-131.415.amzn2.x86_64   containerd://1.6.6
 ip-192-168-56-158.ap-northeast-2.compute.internal   Ready    <none>   22m   v1.24.9-eks-49d8fe8   192.168.56.158   52.78.166.5     Amazon Linux 2   5.4.228-131.415.amzn2.x86_64   containerd://1.6.6
