@@ -58,7 +58,7 @@ Launcher 탭의 Notebook 섹션에서 spylon-kernel 을 선택해서 새로운 �
 
 ![](https://github.com/gnosia93/spark-on-eks/blob/main/images/scala-spark-0.png)
 
-다음 코드를 아래 코드를 실행해서 spark 및 scala 의 동작여부를 확인한다.
+생성된 노트북에서 아래 코드를 실행하고, spark 및 scala 의 동작여부를 확인한다.
 
 ![](https://github.com/gnosia93/spark-on-eks/blob/main/images/scala-spark.png)
 
