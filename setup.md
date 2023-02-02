@@ -52,3 +52,6 @@ Password:
 [InstallKernelSpec] Installed kernelspec spylon-kernel in /usr/local/share/jupyter/kernels/spylon-kernel
 ```
 
+## 참고자료 ##
+
+* [Set up a local Pyspark/Scala Spark Environment with Jupyter on Mac](https://www.youtube.com/watch?v=kSYtgiBIO2k)
