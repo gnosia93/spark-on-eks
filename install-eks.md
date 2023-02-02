@@ -164,7 +164,7 @@ kube-system   kube-proxy-d7r62          1/1     Running   0          23m     192
 kube-system   kube-proxy-s4zpz          1/1     Running   0          23m     192.168.21.146   ip-192-168-21-146.ap-northeast-2.compute.internal   <none>           <none>
 ```
 
-self-managed 노드그룹 교체했기 때문에 노드 그룹 리스트에 나오지 않는다.
+self-managed 의 경우, 노드 그룹 리스트에 정보가 나오지 않는다.
 
 ![](https://github.com/gnosia93/spark-on-eks/blob/main/images/eks-nodegroup-2.png)
 
