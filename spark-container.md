@@ -70,6 +70,7 @@ $ aws ecr-public create-repository \
 
 ### 4. ecr 로그인 ###
 
+docker login 명령어를 사용하여 AWS public erc 레포지토리에 로그인 한다. 패스워드는 아래와 같이 aws CLI 명령어로 가져온다.
 ```
 $ aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws
 
@@ -120,9 +121,6 @@ aws ecr-public delete-repository \
       --force \
       --region us-east-1
 ```
-
-
-
 
 
 ## 참고자료 ##
