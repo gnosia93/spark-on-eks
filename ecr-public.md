@@ -19,37 +19,55 @@ $ mkdir spark-container
 $ cd spark-container
 $ vi Dockerfile
 ```
-[Dockerfile]
+
+### 2. 이미지 빌드 ###
 ```
-FROM public.ecr.aws/amazonlinux/amazonlinux:latest
+$ cd; cd spark-3.3.1-bin-hadoop3
 
-# Install dependencies
-RUN yum update -y && \
- yum install -y httpd
+$ pwd
+/Users/soonbeom/spark-3.3.1-bin-hadoop3
 
-# Install apache and write hello world message
-RUN echo 'Hello World!' > /var/www/html/index.html
+$ cp ./kubernetes/dockerfiles/spark/Dockerfile .
 
-# Configure apache
-RUN echo 'mkdir -p /var/run/httpd' >> /root/run_apache.sh && \
- echo 'mkdir -p /var/lock/httpd' >> /root/run_apache.sh && \
- echo '/usr/sbin/httpd -D FOREGROUND' >> /root/run_apache.sh && \
- chmod 755 /root/run_apache.sh
+$ docker build -t spark-scala-container .
+[+] Building 1.8s (18/18) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                                       
+ => => transferring dockerfile: 2.54kB                                                                                                                     
+ => [internal] load .dockerignore                                                                                                                           
+ => => transferring context: 2B                                                                                                                             
+ => [internal] load metadata for docker.io/library/openjdk:11-jre-slim                                                                                     
+ => [ 1/13] FROM docker.io/library/openjdk:11-jre-slim@sha256:93af7df2308c5141a751c4830e6b6c5717db102b3b31f012ea29d842dc4f2b02                             
+ => [internal] load build context                                                                                                                           
+ => => transferring context: 147.95kB                                                                                                                       
+ => CACHED [ 2/13] RUN set -ex &&     sed -i 's/http:\/\/deb.\(.*\)/https:\/\/deb.\1/g' /etc/apt/sources.list &&     apt-get update &&     ln -s /lib 
+ => CACHED [ 3/13] COPY jars /opt/spark/jars                                                                                                               
+ => CACHED [ 4/13] COPY bin /opt/spark/bin                                                                                                                 
+ => CACHED [ 5/13] COPY sbin /opt/spark/sbin                                                                                                               
+ => CACHED [ 6/13] COPY kubernetes/dockerfiles/spark/entrypoint.sh /opt/                                                                                   
+ => CACHED [ 7/13] COPY kubernetes/dockerfiles/spark/decom.sh /opt/                                                                                         
+ => CACHED [ 8/13] COPY examples /opt/spark/examples                                                                                                       
+ => CACHED [ 9/13] COPY kubernetes/tests /opt/spark/tests                                                                                                   
+ => CACHED [10/13] COPY data /opt/spark/data                                                                                                               
+ => CACHED [11/13] WORKDIR /opt/spark/work-dir                                                                                                             
+ => CACHED [12/13] RUN chmod g+w /opt/spark/work-dir                                                                                                       
+ => CACHED [13/13] RUN chmod a+x /opt/decom.sh                                                                                                             
+ => exporting to image                                                                                                                                     
+ => => exporting layers                                                                                                                                     
+ => => writing image sha256:7fc25f409862e783414a4d1554e0e313a63a71f199fec003499570ca9ab56927                                                               
+ => => naming to docker.io/library/spark-scala-container  
+ 
+$ docker images
+REPOSITORY                                      TAG       IMAGE ID       CREATED             SIZE
+spark-scala-container                           latest    7fc25f409862   20 minutes ago      601MB
 
-EXPOSE 80
+$ docker tag spark-scala-container:latest public.ecr.aws/o5l1c9o9/spark-scala-container
 
-CMD /root/run_apache.sh
+$ docker images
+REPOSITORY                                      TAG       IMAGE ID       CREATED             SIZE
+spark-scala-container                           latest    7fc25f409862   About an hour ago   601MB
+public.ecr.aws/o5l1c9o9/spark-scala-container   latest    7fc25f409862   About an hour ago   601MB
 ```
-아래의 명령어를 사용하여 spark-container 도커 이미지를 생성하고, 동작여부를 테스트 한다.
-```
-$ docker build -t spark-container .
-$ docker images --filter reference=spark-container
-REATED         SIZE
-spark-container   latest    2673042eb6e8   2 minutes ago   524MB
 
-$ docker run -t -i -p 8080:80 spark-container
-AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
-```
 
 
 ### 3. ecr 생성 ###
