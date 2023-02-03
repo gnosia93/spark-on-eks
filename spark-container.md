@@ -13,7 +13,7 @@ $ pwd
 
 $ cp ./kubernetes/dockerfiles/spark/Dockerfile .
 
-$ docker build -t scala-container .
+$ docker build -t spark-scala-container .
 [+] Building 1.8s (18/18) FINISHED
  => [internal] load build definition from Dockerfile                                                                                                       
  => => transferring dockerfile: 2.54kB                                                                                                                     
@@ -38,12 +38,15 @@ $ docker build -t scala-container .
  => exporting to image                                                                                                                                     
  => => exporting layers                                                                                                                                     
  => => writing image sha256:7fc25f409862e783414a4d1554e0e313a63a71f199fec003499570ca9ab56927                                                               
- => => naming to docker.io/library/scala-container  
+ => => naming to docker.io/library/spark-scala-container  
  
 $ docker images
 REPOSITORY                                      TAG       IMAGE ID       CREATED             SIZE
-scala-container                                 latest    7fc25f409862   20 minutes ago      601MB
+spark-scala-container                           latest    7fc25f409862   20 minutes ago      601MB
 
+$ docker tag spark-scala-container:latest public.ecr.aws/o5l1c9o9/spark-scala-container
+
+$ docker push public.ecr.aws/o5l1c9o9/spark-scala-container
 ```
 
 ### 3. 이미지 푸시 ###
