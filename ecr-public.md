@@ -59,13 +59,6 @@ $ docker build -t spark-scala-container .
 $ docker images
 REPOSITORY                                      TAG       IMAGE ID       CREATED             SIZE
 spark-scala-container                           latest    7fc25f409862   20 minutes ago      601MB
-
-$ docker tag spark-scala-container:latest public.ecr.aws/o5l1c9o9/spark-scala-container
-
-$ docker images
-REPOSITORY                                      TAG       IMAGE ID       CREATED             SIZE
-spark-scala-container                           latest    7fc25f409862   About an hour ago   601MB
-public.ecr.aws/o5l1c9o9/spark-scala-container   latest    7fc25f409862   About an hour ago   601MB
 ```
 
 
@@ -101,6 +94,13 @@ Login Succeeded
 ### 5. ecr 에 이미지 등록 ###
 
 ```
+$ docker tag spark-scala-container:latest public.ecr.aws/o5l1c9o9/spark-scala-container
+
+$ docker images
+REPOSITORY                                      TAG       IMAGE ID       CREATED             SIZE
+spark-scala-container                           latest    7fc25f409862   About an hour ago   601MB
+public.ecr.aws/o5l1c9o9/spark-scala-container   latest    7fc25f409862   About an hour ago   601MB
+
 $ docker push public.ecr.aws/o5l1c9o9/spark-scala-container
 Using default tag: latest
 The push refers to repository [public.ecr.aws/o5l1c9o9/spark-scala-container]
