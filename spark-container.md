@@ -1,6 +1,6 @@
 ### 1. 로컬 PC 에 스파크 설치 ###
 
-https://spark.apache.org/downloads.html 으로 방문하여 로컬 PC 의 home 디렉토리 밑에 스파크 바이너리를 설치한다. 
+https://spark.apache.org/downloads.html 으로 방문하여 로컬 PC 의 home 디렉토리에 스파크 바이너리를 설치한다. 
 
 ![](https://github.com/gnosia93/spark-on-eks/blob/main/images/spark-download.png)
 ```
