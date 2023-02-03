@@ -103,7 +103,7 @@ public.ecr.aws/o5l1c9o9/spark-scala-container   latest    2673042eb6e8   27 minu
 ![](https://github.com/gnosia93/spark-on-eks/blob/main/images/ecr-docker-image.png)
 
 
-### 5. 참고자료 ###
+### [참고] 이미지 및 레포지토리 삭제 ###
 
 * ecr 이미지 삭제 
 ```
