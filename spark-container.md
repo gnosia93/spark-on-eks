@@ -12,25 +12,8 @@ $ cd spark-3.3.1-bin-hadoop3
 ```
 
 
-
-
-
-### 2. Dockerfile 생성 ###
-
-spark 전용 컨테이너를 만들기 위해서 Dockerfile 를 만든다. 
-```
-$ mkdir spark-container
-$ cd spark-container
-$ vi Dockerfile
-```
-
 ### 2. 이미지 빌드 ###
 ```
-$ cd; cd spark-3.3.1-bin-hadoop3
-
-$ pwd
-/Users/soonbeom/spark-3.3.1-bin-hadoop3
-
 $ cp ./kubernetes/dockerfiles/spark/Dockerfile .
 
 $ docker build -t spark-scala-container .
@@ -64,8 +47,6 @@ $ docker images
 REPOSITORY                                      TAG       IMAGE ID       CREATED             SIZE
 spark-scala-container                           latest    7fc25f409862   20 minutes ago      601MB
 ```
-
-
 
 ### 3. ecr 생성 ###
 
