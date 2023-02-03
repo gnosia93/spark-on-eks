@@ -60,6 +60,13 @@ AH00558: httpd: Could not reliably determine the server's fully qualified domain
 
 ### 3. ecr 에 이미지 등록 ###
 
+```
+$ aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws
+
+Login Succeeded
+$
+
+```
 
 
 
