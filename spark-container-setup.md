@@ -20,7 +20,7 @@ $ aws ecr-public create-repository \
 
 ### 2. Dockerfile 생성 ###
 
-아래의 명령어를 사용하여 spark-container 도커 이미지를 생성한다. 
+spark 전용 컨테이너를 만들기 위해서 Dockerfile 를 만든다. 
 ```
 $ mkdir spark-container
 $ cd spark-container
@@ -47,7 +47,7 @@ EXPOSE 80
 
 CMD /root/run_apache.sh
 ```
-
+아래의 명령어를 사용하여 spark-container 도커 이미지를 생성한다. 
 ```
 $ docker build -t spark-container .
 $ docker images --filter reference=spark-container
