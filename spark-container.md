@@ -4,7 +4,11 @@ https://spark.apache.org/downloads.html 으로 방문하여 PC 의 home 디렉�
 
 ![](https://github.com/gnosia93/spark-on-eks/blob/main/images/spark-download.png)
 ```
-$ 
+$ cd; wget https://dlcdn.apache.org/spark/spark-3.3.1/spark-3.3.1-bin-hadoop3.tgz
+
+$ tar xvfz spark-3.3.1-bin-hadoop3.tgz 
+
+$ cd spark-3.3.1-bin-hadoop3
 ```
 
 
