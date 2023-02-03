@@ -12,7 +12,8 @@ $ pwd
 /Users/soonbeom/spark-container/spark-3.3.1-bin-hadoop3
 
 $ cp ./kubernetes/dockerfiles/spark/Dockerfile .
- % docker build -t scala-container .
+
+$ docker build -t scala-container .
 [+] Building 1.8s (18/18) FINISHED
  => [internal] load build definition from Dockerfile                                                                                                       
  => => transferring dockerfile: 2.54kB                                                                                                                     
