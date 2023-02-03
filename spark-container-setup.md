@@ -47,7 +47,7 @@ EXPOSE 80
 
 CMD /root/run_apache.sh
 ```
-아래의 명령어를 사용하여 spark-container 도커 이미지를 생성한다. 
+아래의 명령어를 사용하여 spark-container 도커 이미지를 생성하고, 동작여부를 테스트 한다.
 ```
 $ docker build -t spark-container .
 $ docker images --filter reference=spark-container
@@ -58,6 +58,7 @@ $ docker run -t -i -p 8080:80 spark-container
 AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
 ```
 
+### 3. ecr 에 이미지 등록 ###
 
 
 
