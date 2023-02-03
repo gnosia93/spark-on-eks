@@ -126,5 +126,4 @@ aws ecr-public delete-repository \
 
 ## 참고자료 ##
 * https://docs.aws.amazon.com/AmazonECR/latest/public/getting-started-cli.html
-*  https://spark.apache.org/docs/latest/running-on-kubernetes.html
-*  https://spark.apache.org/docs/latest/configuration.html
+* https://spark.apache.org/docs/latest/running-on-kubernetes.html
