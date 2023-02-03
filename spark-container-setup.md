@@ -86,6 +86,14 @@ public.ecr.aws/o5l1c9o9/spark-scala-container   latest    2673042eb6e8   27 minu
 ```
 
 
+#### [참고] ecr 이미지 삭제 ####
+
+```
+aws ecr-public batch-delete-image \
+      --repository-name spark-scala-container \
+      --image-ids imageTag=latest \
+      --region us-east-1
+```
 
 
 ## 참고자료 ##
