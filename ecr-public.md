@@ -90,19 +90,17 @@ $ aws ecr-public create-repository \
 ```
 
 
-### 4. ecr 에 이미지 등록 ###
+### 4. ecr 로그인 ###
 
-docker tag 명령어 수행시, ecr 생성시 출력된 repositoryUri 값을 taget_image 파리미터로 설정한다.
 ```
 $ aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws
 
 Login Succeeded
-$ docker images
-REPOSITORY        TAG       IMAGE ID       CREATED          SIZE
-spark-container   latest    2673042eb6e8   23 minutes ago   524MB
+```
 
-$ docker tag spark-container:latest public.ecr.aws/o5l1c9o9/spark-scala-container
+### 5. ecr 에 이미지 등록 ###
 
+```
 $ docker push public.ecr.aws/o5l1c9o9/spark-scala-container
 Using default tag: latest
 The push refers to repository [public.ecr.aws/o5l1c9o9/spark-scala-container]
