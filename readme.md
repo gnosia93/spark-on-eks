@@ -3,7 +3,7 @@
 
 ## 실습순서 ##
 
-* [1. 주피터 환경 설정하기](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/1.jupyter-setup.md)
+* [1. 주피터 노트북 설정하기](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/1.jupyter-setup.md)
 
 * [2. EKS 클러스터 생성하기](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/2.eks-install.md)
 
