@@ -7,5 +7,5 @@
 
 * [2. EKS 클러스터 생성하기](https://github.com/gnosia93/spark-on-eks/blob/main/install-eks.md)
 
-* [3. 스파크 컨테이너 이미지 생성하기](https://github.com/gnosia93/spark-on-eks/blob/main/spark-container-.md)
+* [3. 스파크 컨테이너 이미지 생성하기](https://github.com/gnosia93/spark-on-eks/blob/main/spark-container.md)
 
