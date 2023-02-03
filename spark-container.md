@@ -40,17 +40,15 @@ $ docker build -t scala-container .
  => => writing image sha256:7fc25f409862e783414a4d1554e0e313a63a71f199fec003499570ca9ab56927                                                               
  => => naming to docker.io/library/scala-container  
  
-(base) soonbeom@bcd07468d10a spark-3.3.1-bin-hadoop3 % docker images
+$ docker images
 REPOSITORY                                      TAG       IMAGE ID       CREATED             SIZE
 scala-container                                 latest    7fc25f409862   20 minutes ago      601MB
-spark-container                                 latest    2673042eb6e8   About an hour ago   524MB
-public.ecr.aws/o5l1c9o9/spark-scala-container   latest    2673042eb6e8   About an hour ago   524MB
+
 ```
 
 ### 3. 이미지 푸시 ###
 
 ```
-$ ./bin/docker-image-tool.sh -r public.ecr.aws/o5l1c9o9/spark-scala-container -t my-tag push
 
 $ docker push public.ecr.aws/o5l1c9o9/spark-scala-container:my-tag
 ```
