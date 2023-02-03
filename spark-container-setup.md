@@ -60,6 +60,7 @@ AH00558: httpd: Could not reliably determine the server's fully qualified domain
 
 ### 3. ecr 에 이미지 등록 ###
 
+docker tag 명령어 수행시, ecr 생성시 출력된 repositoryUri 값을 taget_image 파리미터로 설정한다.
 ```
 $ aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws
 
