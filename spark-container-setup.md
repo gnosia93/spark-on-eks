@@ -64,8 +64,25 @@ AH00558: httpd: Could not reliably determine the server's fully qualified domain
 $ aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws
 
 Login Succeeded
-$
+$ docker images
+REPOSITORY        TAG       IMAGE ID       CREATED          SIZE
+spark-container   latest    2673042eb6e8   23 minutes ago   524MB
 
+$ docker tag spark-container:latest public.ecr.aws/o5l1c9o9/spark-scala-container
+
+$ docker push public.ecr.aws/o5l1c9o9/spark-scala-container
+Using default tag: latest
+The push refers to repository [public.ecr.aws/o5l1c9o9/spark-scala-container]
+c517369d99ff: Pushed
+d67656653a16: Pushed
+186b247cb7db: Pushed
+08d6245c5886: Pushed
+latest: digest: sha256:ace0211d11a6b9e428336cd5ce5fe8cd4c3464e8b1ba84a6d0393f7928fed8bd size: 1156
+
+$ docker images
+REPOSITORY                                      TAG       IMAGE ID       CREATED          SIZE
+spark-container                                 latest    2673042eb6e8   27 minutes ago   524MB
+public.ecr.aws/o5l1c9o9/spark-scala-container   latest    2673042eb6e8   27 minutes ago   524MB
 ```
 
 
