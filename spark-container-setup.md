@@ -1,7 +1,7 @@
 
 ### 1. ecr 생성 ###
 
-us-east-1 리전에 퍼블릭 레포지토리를 만든다. 퍼브릭 레포지토리의 경우 us-east-1 리전에만 생성이 가능하다.
+us-east-1 리전에 퍼블릭 레포지토리를 만든다. 프라이비트 레포지토리와 달리 퍼블릭의 경우 us-east-1 리전에만 생성이 가능하다.
 ```
 $ aws ecr-public create-repository \
      --repository-name spark-scala-container \
