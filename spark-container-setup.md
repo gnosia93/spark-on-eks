@@ -47,7 +47,12 @@ EXPOSE 80
 CMD /root/run_apache.sh
 ```
 
-
+```
+$ docker build -t spark-container .
+$ docker images --filter reference=spark-container
+REATED         SIZE
+spark-container   latest    2673042eb6e8   2 minutes ago   524MB
+```
 
 
 
