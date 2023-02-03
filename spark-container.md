@@ -79,6 +79,7 @@ Login Succeeded
 
 ### 5. ecr 에 이미지 등록 ###
 
+docker tag 를 사용하여 이미지 태깅시 TARGET_IMAGE 파리미터는 위에서 생성된 ecr의 epositoryUri 를 사용한다.   
 ```
 $ docker tag spark-scala-container:latest public.ecr.aws/o5l1c9o9/spark-scala-container
 
