@@ -85,6 +85,7 @@ spark-container                                 latest    2673042eb6e8   27 minu
 public.ecr.aws/o5l1c9o9/spark-scala-container   latest    2673042eb6e8   27 minutes ago   524MB
 ```
 
+![](https://github.com/gnosia93/spark-on-eks/blob/main/images/ecr-docker-image.png)
 
 #### [참고] ecr 이미지 삭제 ####
 
