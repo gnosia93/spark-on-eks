@@ -56,3 +56,9 @@ public.ecr.aws/o5l1c9o9/spark-scala-container/spark   my-tag    7fc25f409862   1
 spark-container                                       latest    2673042eb6e8   About an hour ago   524MB
 public.ecr.aws/o5l1c9o9/spark-scala-container         latest    2673042eb6e8   About an hour ago   524MB
 ```
+
+### 3. 이미지 푸시 ###
+
+```
+$ ./bin/docker-image-tool.sh -r public.ecr.aws/o5l1c9o9/spark-scala-container -t my-tag push
+```
