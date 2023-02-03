@@ -24,6 +24,9 @@ $ aws ecr-public create-repository \
 $ mkdir spark-container
 $ cd spark-container
 $ vi Dockerfile
+```
+[Dockerfile]
+```
 FROM public.ecr.aws/amazonlinux/amazonlinux:latest
 
 # Install dependencies
