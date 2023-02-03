@@ -1,7 +1,18 @@
 
 ### 1. ecr 생성 ###
 
+```
+$ aws ecr-public create-repository \
+     --repository-name spark-scala-container \
+     --region us-east-1
+```
+
+
+
  * https://docs.aws.amazon.com/AmazonECR/latest/public/getting-started-cli.html
+
+
+
 
 
 
