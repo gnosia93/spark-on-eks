@@ -53,6 +53,9 @@ $ docker build -t spark-container .
 $ docker images --filter reference=spark-container
 REATED         SIZE
 spark-container   latest    2673042eb6e8   2 minutes ago   524MB
+
+$ docker run -t -i -p 8080:80 spark-container
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
 ```
 
 
