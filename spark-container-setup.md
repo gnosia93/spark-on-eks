@@ -87,7 +87,7 @@ public.ecr.aws/o5l1c9o9/spark-scala-container   latest    2673042eb6e8   27 minu
 
 ![](https://github.com/gnosia93/spark-on-eks/blob/main/images/ecr-docker-image.png)
 
-#### [참고] ecr 이미지 삭제 ####
+##### [참고] ecr 이미지 삭제 #####
 
 ```
 aws ecr-public batch-delete-image \
@@ -96,6 +96,13 @@ aws ecr-public batch-delete-image \
       --region us-east-1
 ```
 
+##### [참고] ecr 이미지 삭제 #####
+```
+aws ecr-public delete-repository \
+      --repository-name spark-scala-container \
+      --force \
+      --region us-east-1
+```
 
 ## 참고자료 ##
 * https://docs.aws.amazon.com/AmazonECR/latest/public/getting-started-cli.html
