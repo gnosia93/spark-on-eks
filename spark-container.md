@@ -45,13 +45,28 @@ REPOSITORY                                      TAG       IMAGE ID       CREATED
 spark-scala-container                           latest    7fc25f409862   20 minutes ago      601MB
 
 $ docker tag spark-scala-container:latest public.ecr.aws/o5l1c9o9/spark-scala-container
-
-$ docker push public.ecr.aws/o5l1c9o9/spark-scala-container
 ```
 
 ### 3. 이미지 푸시 ###
 
 ```
-
-$ docker push public.ecr.aws/o5l1c9o9/spark-scala-container:my-tag
+$ docker push public.ecr.aws/o5l1c9o9/spark-scala-container
+Using default tag: latest
+The push refers to repository [public.ecr.aws/o5l1c9o9/spark-scala-container]
+d02c25422a17: Pushed
+8e03ac9da23c: Pushed
+5f70bf18a086: Pushed
+92d329a43e0f: Pushed
+b940e2412fba: Pushed
+ecb02cea58e4: Pushed
+5e43235bf89f: Pushed
+fabaa3841929: Pushed
+0c3c69fa7c00: Pushed
+35d20fb5e0d9: Pushed
+88cd3da8ef39: Pushing [===================================>               ]  215.2MB/301.6MB
+5d6049ae6ccd: Pushed
+095c43b397b5: Pushed
+c6494d1aa307: Pushed
+392801f05f02: Pushed
+e4f85c7c2b1f: Pushed
 ```
