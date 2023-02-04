@@ -39,7 +39,20 @@ CURRENT   NAME                                             CLUSTER              
 *         docker-desktop                                   docker-desktop                          docker-desktop
           hopigaga@spark-on-eks.ap-northeast-2.eksctl.io   spark-on-eks.ap-northeast-2.eksctl.io   hopigaga@spark-on-eks.ap-northeast-2.eksctl.io
 
-
+% kubectl get nodes
+NAME             STATUS   ROLES           AGE   VERSION
+docker-desktop   Ready    control-plane   24m   v1.25.2
+(base) soonbeom@bcd07468d10a .kube % kubectl get pods -A
+NAMESPACE     NAME                                     READY   STATUS    RESTARTS        AGE
+kube-system   coredns-95db45d46-8s6hx                  1/1     Running   1 (22m ago)     24m
+kube-system   coredns-95db45d46-sr2js                  1/1     Running   1 (22m ago)     24m
+kube-system   etcd-docker-desktop                      1/1     Running   1 (22m ago)     24m
+kube-system   kube-apiserver-docker-desktop            1/1     Running   1 (22m ago)     24m
+kube-system   kube-controller-manager-docker-desktop   1/1     Running   1 (22m ago)     24m
+kube-system   kube-proxy-k95nn                         1/1     Running   1 (22m ago)     24m
+kube-system   kube-scheduler-docker-desktop            1/1     Running   1 (22m ago)     24m
+kube-system   storage-provisioner                      1/1     Running   1 (22m ago)     24m
+kube-system   vpnkit-controller                        1/1     Running   3 (3m37s ago)   24m
 
 ```
 
