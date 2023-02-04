@@ -27,36 +27,3 @@ Exit 상태의 모든 컨테이너 삭제하기
 docker rm $(docker ps --filter 'status=exited' -a -q)
 ```
 
-```
-% kubectl config get-contexts
-CURRENT   NAME                                             CLUSTER                                 AUTHINFO                                         NAMESPACE
-          docker-desktop                                   docker-desktop                          docker-desktop
-*         hopigaga@spark-on-eks.ap-northeast-2.eksctl.io   spark-on-eks.ap-northeast-2.eksctl.io   hopigaga@spark-on-eks.ap-northeast-2.eksctl.io
-(base) soonbeom@bcd07468d10a .kube % kubectl config use-context docker-desktop
-Switched to context "docker-desktop".
-(base) soonbeom@bcd07468d10a .kube % kubectl config get-contexts
-CURRENT   NAME                                             CLUSTER                                 AUTHINFO                                         NAMESPACE
-*         docker-desktop                                   docker-desktop                          docker-desktop
-          hopigaga@spark-on-eks.ap-northeast-2.eksctl.io   spark-on-eks.ap-northeast-2.eksctl.io   hopigaga@spark-on-eks.ap-northeast-2.eksctl.io
-
-% kubectl get nodes
-NAME             STATUS   ROLES           AGE   VERSION
-docker-desktop   Ready    control-plane   24m   v1.25.2
-(base) soonbeom@bcd07468d10a .kube % kubectl get pods -A
-NAMESPACE     NAME                                     READY   STATUS    RESTARTS        AGE
-kube-system   coredns-95db45d46-8s6hx                  1/1     Running   1 (22m ago)     24m
-kube-system   coredns-95db45d46-sr2js                  1/1     Running   1 (22m ago)     24m
-kube-system   etcd-docker-desktop                      1/1     Running   1 (22m ago)     24m
-kube-system   kube-apiserver-docker-desktop            1/1     Running   1 (22m ago)     24m
-kube-system   kube-controller-manager-docker-desktop   1/1     Running   1 (22m ago)     24m
-kube-system   kube-proxy-k95nn                         1/1     Running   1 (22m ago)     24m
-kube-system   kube-scheduler-docker-desktop            1/1     Running   1 (22m ago)     24m
-kube-system   storage-provisioner                      1/1     Running   1 (22m ago)     24m
-kube-system   vpnkit-controller                        1/1     Running   3 (3m37s ago)   24m
-
-% kubectl cluster-info
-Kubernetes control plane is running at https://kubernetes.docker.internal:6443
-CoreDNS is running at https://kubernetes.docker.internal:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
-```
-
-* https://stackoverflow.com/questions/55498702/how-to-fix-forbiddenconfigured-service-account-doesnt-have-access-with-spark
