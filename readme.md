@@ -18,20 +18,28 @@
 모든 컨테이너 삭제하기
 
 docker stop $(docker ps -a -q)
-
 docker rm $(docker ps -a -q)
 
-
-
 모든 이미지 삭제하기
-
 docker rmi $(docker images -q)
 
-
-
 Exit 상태의 모든 컨테이너 삭제하기
-
 docker rm $(docker ps --filter 'status=exited' -a -q)
+```
+
+```
+% kubectl config get-contexts
+CURRENT   NAME                                             CLUSTER                                 AUTHINFO                                         NAMESPACE
+          docker-desktop                                   docker-desktop                          docker-desktop
+*         hopigaga@spark-on-eks.ap-northeast-2.eksctl.io   spark-on-eks.ap-northeast-2.eksctl.io   hopigaga@spark-on-eks.ap-northeast-2.eksctl.io
+(base) soonbeom@bcd07468d10a .kube % kubectl config use-context docker-desktop
+Switched to context "docker-desktop".
+(base) soonbeom@bcd07468d10a .kube % kubectl config get-contexts
+CURRENT   NAME                                             CLUSTER                                 AUTHINFO                                         NAMESPACE
+*         docker-desktop                                   docker-desktop                          docker-desktop
+          hopigaga@spark-on-eks.ap-northeast-2.eksctl.io   spark-on-eks.ap-northeast-2.eksctl.io   hopigaga@spark-on-eks.ap-northeast-2.eksctl.io
+
 
 
 ```
+
