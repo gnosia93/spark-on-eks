@@ -3,7 +3,7 @@
 
 ## 실습순서 ##
 
-* [0. 사전준비 - 도커 ](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/0.docker-desktop-k8s.md)
+* [0. 사전준비 - 도커 데스크탑 설치](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/0.docker-desktop-k8s.md)
 
 * [1. 주피터 노트북 설정하기](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/1.jupyter-setup.md)
 
