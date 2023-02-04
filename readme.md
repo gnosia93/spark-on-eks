@@ -3,7 +3,7 @@
 
 ## 실습순서 ##
 
-* 로컥 PC 도커 데스크 탑 설치
+* [0. 사전준비 - 도커 ](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/0.docker-desktop-k8s.md)
 
 * [1. 주피터 노트북 설정하기](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/1.jupyter-setup.md)
 
