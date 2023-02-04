@@ -18,5 +18,7 @@
 * [7. 분석 어플리케이션 EKS에서 실행하기](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/5.deve.md)
 
 
+## 참고자료 ##
 
+* https://github.com/jadianes/spark-py-notebooks
 
