@@ -11,7 +11,7 @@
 
 * [4. 스파크 컨테이너 이미지 생성하기](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/3.spark-container.md)
 
-* [5. 샘플 어플리케이션 테스트](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/4.spark-app.md)
+* [5. SparkPi 어플리케이션 테스트](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/4.spark-app.md)
 
 * [6. 분석 어플리케이션 개발하기](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/5.deve.md)
 
