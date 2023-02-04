@@ -54,5 +54,8 @@ kube-system   kube-scheduler-docker-desktop            1/1     Running   1 (22m 
 kube-system   storage-provisioner                      1/1     Running   1 (22m ago)     24m
 kube-system   vpnkit-controller                        1/1     Running   3 (3m37s ago)   24m
 
+% kubectl cluster-info
+Kubernetes control plane is running at https://kubernetes.docker.internal:6443
+CoreDNS is running at https://kubernetes.docker.internal:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
 ```
 
