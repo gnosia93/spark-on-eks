@@ -59,3 +59,4 @@ Kubernetes control plane is running at https://kubernetes.docker.internal:6443
 CoreDNS is running at https://kubernetes.docker.internal:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
 ```
 
+* https://stackoverflow.com/questions/55498702/how-to-fix-forbiddenconfigured-service-account-doesnt-have-access-with-spark
