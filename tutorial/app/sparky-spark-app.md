@@ -22,9 +22,9 @@ Preferences > Plugins 에서 인텔리J 스칼러 플러그인을 설치한다.
 ![](https://github.com/gnosia93/spark-on-eks/blob/main/images/intelij-scala-plugin.png)
 
 
-## 분석 어플리케이션 개발 ##
+## 스칼라 어플리케이션 개발 ##
 
-### 1. 스칼라 프로젝트 생성하기 ###
+### 1. 프로젝트 생성하기 ###
 
 New Project 화면 덤프.
 ,,,,
