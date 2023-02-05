@@ -64,7 +64,7 @@ sbt 가 관련 자바 패키지를 다운로드 할 수 있도록 한다.
 
 ![](https://github.com/gnosia93/spark-on-eks/blob/main/images/intelij-sparky-spark.png)
 
-### 4. Uber Jar 생성 ###
+### 4. 우버 Jar 생성 ###
  
  우버 jar를 생성하기 위해 sbt-asssembly 패키지를 사용합니다.
  assemby.sbt 를 신규로 생성하고, 기존 build.sbt 는 아래와 같이 Merge 룰을 설정합니다.
