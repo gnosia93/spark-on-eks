@@ -23,3 +23,5 @@
 * https://github.com/jadianes/spark-py-notebooks
 
 * https://sparkbyexamples.com/spark/how-to-create-an-rdd-using-parallelize/
+
+
