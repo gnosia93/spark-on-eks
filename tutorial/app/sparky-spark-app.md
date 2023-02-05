@@ -22,12 +22,12 @@ Preferences > Plugins 에서 인텔리J 스칼러 플러그인을 설치한다.
 ![](https://github.com/gnosia93/spark-on-eks/blob/main/images/intelij-scala-plugin.png)
 
 
-### 1. 신규 프로젝트 생성하기 ###
+### 1. 스칼라 프로젝트 생성하기 ###
 
-* New Project 화면 덤프.
+New Project 화면 덤프.
 ,,,,
  
-* build.sbt 파일 생성하기
+### 2. build.sbt 파일 생성하기 ###
 
 메이븐 레포지토리(https://mvnrepository.com/search?q=spark) 에서 스파크를 검색해서 스파크 및 스칼러 버전을 확인하고, 인텔리J SparkySpark 프로젝트의 build.sbt 파일을 업데이트 한다. 
 ![](https://github.com/gnosia93/spark-on-eks/blob/main/images/mvn-spark-scala.png)
@@ -58,11 +58,11 @@ sbt 가 관련 자바 패키지를 다운로드 할 수 있도록 한다.
 ![](https://github.com/gnosia93/spark-on-eks/blob/main/images/intelij-sbt-package.png)
 
 
-### 2. 어플리케이션 코딩 ###
+### 3. 어플리케이션 코딩 ###
 
 ![](https://github.com/gnosia93/spark-on-eks/blob/main/images/intelij-sparky-spark.png)
 
-### 3. Uber Jar 생성 ###
+### 4. Uber Jar 생성 ###
  
  우버 jar를 생성하기 위해 sbt-asssembly 패키지를 사용합니다.
  assemby.sbt 를 신규로 생성하고, 기존 build.sbt 는 아래와 같이 Merge 룰을 설정합니다.
@@ -136,7 +136,7 @@ assemblyMergeStrategy in assembly := {
 (base) SparkySpark $ 
 ```
 
-### 4. 어플리케이션 실행하기 ###
+### 5. 어플리케이션 실행하기 ###
 ```
 $ java -jar /Users/soonbeom/IdeaProjects/SparkySpark/target/scala-2.13/SparkySpark-assembly-0.1.0-SNAPSHOT.jar
 ```
