@@ -9,7 +9,7 @@
 
 * [3. EKS 클러스터 생성하기](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/3.eks-install.md)
 
-* [4. 스파크 컨테이너 이미지 생성하기](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/4.spark-container.md)
+* [4. 스파크 이미지 생성하기](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/4.spark-container.md)
 
 * [5. SparkPi 테스트 하기](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/5.spark-sample-pi.md)
 
