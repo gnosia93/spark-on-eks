@@ -66,8 +66,7 @@ sbt 가 관련 자바 패키지를 다운로드 할 수 있도록 한다.
 
 ### 4. 우버 Jar 생성 ###
  
- 우버 jar를 생성하기 위해 sbt-asssembly 패키지를 사용합니다.
- assemby.sbt 를 신규로 생성하고, 기존 build.sbt 는 아래와 같이 Merge 룰을 설정합니다.
+우버 jar를 생성하기 위해 sbt-asssembly 패키지를 사용합니다. Project[SparkySpark-Build] 디렉토리 밑에 아래 내용으로 assemby.sbt 를 생성하고, build.sbt 에는 아래와 같이 Merge 룰을 추가합니다. Merge 룰은 jar 파일 패킹시에 동일한 이름을 가진 파일을 발견했을때 어떻게 처리할지를 결정합니다.
  
 ![](https://github.com/gnosia93/spark-on-eks/blob/main/images/sbt-assembly-assembly.sbt.png)
 
