@@ -18,5 +18,5 @@ metadata:
 ```
 
 ```
-$ kubectl create -f my-sa.yaml
+$ kubectl create -f spark.yaml
 ```
