@@ -1,6 +1,6 @@
 ## IAM 서비스 어카운트 ##
 
-https://levelup.gitconnected.com/using-iam-roles-to-allow-the-pods-in-aws-eks-to-read-the-aws-s3-bucket-be493fbdda84 문서에 따라 설정한다.
+https://levelup.gitconnected.com/using-iam-roles-to-allow-the-pods-in-aws-eks-to-read-the-aws-s3-bucket-be493fbdda84 문서를 참고 하여 관련 설정을 한다. S3 버킷에 대한 접근 권한 설정시 List, Get, Put 모두 설정한다.
 
 spark 서비스 어카운트에 위의 과정에서 생성된 Role을 바인딩 한다.
 
