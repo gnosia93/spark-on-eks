@@ -8,28 +8,24 @@
 AWS CLI 가 설치되어 있는 컨테이너 이미지로, 파드를 생성하고, private S3 에서 대해서 ls 를 수행한다.
 생성된 서비스 어카운트가 제대로 동작하는지 테스트 한다.
 
-* docker pull amazon/aws-cli:latest
-* docker pull registry.hub.docker.com/amazon/aws-cli:latest
-
-[nginx.yaml]
 ```
-apiVersion: v1
-kind: Pod
-metadata:
-  name: nginx
-spec:
-  containers:
-  - name: nginx
-    image: ubuntu/nginx
-    ports:
-    - containerPort: 80
-```
+$ kubectl apply -f https://k8s.io/examples/application/shell-demo.yaml
 
-$ kubectl config use-context name-of-account@spark-on-eks.ap-northeast-2.eksctl.io
+$ kubectl exec --stdin --tty shell-demo -- /bin/bash
 
-$ kubectl apply -f nginx.yaml
+root@ip-192-168-8-112:/# uname -a
+Linux ip-192-168-8-112.ap-northeast-2.compute.internal 5.4.228-131.415.amzn2.x86_64 #1 SMP Tue Dec 20 12:51:02 UTC 2022 x86_64 GNU/Linux
 
-$ kubectl exec -it  nginx -- /bin/bash
+root@ip-192-168-8-112:/# curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
+root@ip-192-168-8-112:/# apt update && apt upgrade
+
+root@ip-192-168-8-112:/# apt install unzip
+
+root@ip-192-168-8-112:/# unzip awscliv2.zip
+
+root@ip-192-168-8-112:/# ./aws/install
+You can now run: /usr/local/bin/aws --version
 ```
 
 ## 설정 ##
