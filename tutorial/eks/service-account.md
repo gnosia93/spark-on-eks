@@ -11,12 +11,21 @@ AWS CLI 가 설치되어 있는 컨테이너 이미지로, 파드를 생성하�
 * docker pull amazon/aws-cli:latest
 * docker pull registry.hub.docker.com/amazon/aws-cli:latest
 
+[aws-cli.yaml]
 ```
-
-
+apiVersion: v1
+kind: Pod
+metadata:
+  name: aws-cli
+spec:
+  containers:
+  - name: aws-cli
+    image: registry.hub.docker.com/amazon/aws-cli:latest
+```
+$ kubectl apply -f aws-cli.yaml
 
 ````
-$ kubectl get pod
+$ kubectl get pod aws
 
 NAME                                READY   STATUS    RESTARTS   AGE
 jenkins-8498fcb9b5-8k8b8         1/1     Running   0          40m
