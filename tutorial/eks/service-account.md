@@ -13,6 +13,15 @@ AWS CLI 가 설치되어 있는 컨테이너 이미지로, 파드를 생성하�
 
 ```
 
+
+
+````
+$ kubectl get pod
+
+NAME                                READY   STATUS    RESTARTS   AGE
+jenkins-8498fcb9b5-8k8b8         1/1     Running   0          40m
+
+$ kubectl exec -it  jenkins-8498fcb9b5-8k8b8 -- /bin/bash
 ```
 
 ## 설정 ##
