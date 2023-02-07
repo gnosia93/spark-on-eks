@@ -18,12 +18,10 @@
 * [7. eks에 어플리케이션 배포하기](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/7.spark-app-deploy.md)
 
 
-## 참고자료 ##
+## 레퍼런스 ##
 
 * https://spark.apache.org/docs/latest/running-on-kubernetes.html
-
 * https://github.com/jadianes/spark-py-notebooks
-
 * https://sparkbyexamples.com/spark/how-to-create-an-rdd-using-parallelize/
-
+* https://kubernetes.io/ko/
 
