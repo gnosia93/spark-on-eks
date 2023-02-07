@@ -1,10 +1,12 @@
-* https://levelup.gitconnected.com/using-iam-roles-to-allow-the-pods-in-aws-eks-to-read-the-aws-s3-bucket-be493fbdda84
+## 테스트 ##
 
-* https://dev.to/aws-builders/working-with-eks-using-iam-and-native-k8s-service-accounts-to-access-aws-s3-3e20
+생성된 서비스 어카운트가 제대로 동작하는지 테스트 한다.
 
-* https://brunch.co.kr/@topasvga/1885
+```
 
+```
 
+## 설정 ##
 
 [spark.yaml]
 ```
@@ -90,3 +92,12 @@ BinaryData
 Events:  <none>
 (base) soonbeom@bcd07468d10a ~ % cd bin
 ```
+
+
+## 참고자료 ##
+
+* https://levelup.gitconnected.com/using-iam-roles-to-allow-the-pods-in-aws-eks-to-read-the-aws-s3-bucket-be493fbdda84
+
+* https://dev.to/aws-builders/working-with-eks-using-iam-and-native-k8s-service-accounts-to-access-aws-s3-3e20
+
+* https://brunch.co.kr/@topasvga/1885
