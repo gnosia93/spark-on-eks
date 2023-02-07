@@ -1,4 +1,4 @@
-## IAM 서비스 어카운트 설정 하기 ##
+## IAM 서비스 어카운트 ##
 
 https://levelup.gitconnected.com/using-iam-roles-to-allow-the-pods-in-aws-eks-to-read-the-aws-s3-bucket-be493fbdda84 문서에 따라 설정한다.
 
