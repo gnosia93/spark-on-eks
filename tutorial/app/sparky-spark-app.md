@@ -102,6 +102,7 @@ object SparkySpark {
   }
 }
 ```
+*** 중요 ***
 
 .master("local") 호출은 IDE 로 개발 및 디버깅용으로 유용한 부분이다. 우버 Jar 생성시 해당 부분은 주석 처리하고 생성한다.
 
