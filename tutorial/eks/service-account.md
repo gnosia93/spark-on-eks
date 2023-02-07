@@ -11,21 +11,23 @@ AWS CLI 가 설치되어 있는 컨테이너 이미지로, 파드를 생성하�
 * docker pull amazon/aws-cli:latest
 * docker pull registry.hub.docker.com/amazon/aws-cli:latest
 
-[aws-cli.yaml]
+[nginx.yaml]
 ```
 apiVersion: v1
 kind: Pod
 metadata:
-  name: aws-cli
+  name: nginx
 spec:
   containers:
-  - name: aws-cli
-    image: registry.hub.docker.com/amazon/aws-cli:latest
+  - name: nginx
+    image: nginx:1.7.9
+    ports:
+    - containerPort: 80
 ```
 
 $ kubectl config use-context name-of-account@spark-on-eks.ap-northeast-2.eksctl.io
 
-$ kubectl apply -f aws-cli.yaml
+$ kubectl apply -f nginx.yaml
 
 ````
 $ kubectl get pod aws
