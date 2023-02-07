@@ -64,7 +64,45 @@ sbt 가 관련 자바 패키지를 다운로드 할 수 있도록 한다.
 
 ![](https://github.com/gnosia93/spark-on-eks/blob/main/images/intelij-sparky-spark.png)
 
+[SparkySpark]
+```
+import org.apache.spark.sql.SparkSession
 
+object SparkySpark {
+
+  def main(args: Array[String]): Unit = {
+
+    println("SparkSpark start ... hello v5")
+
+    val spark = SparkSession
+      .builder()
+      .appName("Sparky Analysis for S3")
+      .config("spark.hadoop.fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem")
+  //    .config("spark.hadoop.fs.s3a.access.key", "xxxxxxx")
+  //    .config("spark.hadoop.fs.s3a.secret.key", "yyyy")
+
+      // https://hadoop.apache.org/docs/stable/hadoop-aws/tools/hadoop-aws/index.html#Authenticating_with_S3
+      .config("fs.s3a.aws.credentials.provider", "org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider," +
+              "com.amazonaws.auth.EnvironmentVariableCredentialsProvider," +
+              "com.amazonaws.auth.profile.ProfileCredentialsProvider," +
+              "com.amazonaws.auth.InstanceProfileCredentialsProvider")
+      .master("local")        // 패키징 하기전에 주석 처리해야 한다.
+      .getOrCreate()
+
+
+    val dataFilePath = "s3a://spark-on-eks-soonbeom/raw/sparkify_event_data.parquet/"
+    val df = spark.read.parquet(dataFilePath)
+    df.show(5)
+    println("record count ...." + df.count())
+    println(df.rdd.getNumPartitions)
+    println(df.rdd.partitions.length)
+    println(df.rdd.partitions.size)
+
+    // Thread.sleep(1000000)
+  }
+}
+
+```
 
 ### 4. 로컬 모드로 테스트 하기 ###
 
