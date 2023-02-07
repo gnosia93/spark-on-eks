@@ -20,7 +20,7 @@ metadata:
 spec:
   containers:
   - name: nginx
-    image: nginx:1.7.9
+    image: ubuntu/nginx
     ports:
     - containerPort: 80
 ```
