@@ -68,8 +68,7 @@ sbt 가 관련 자바 패키지를 다운로드 할 수 있도록 한다.
 
 ### 4. 로컬 모드로 테스트 하기 ###
 
-https://www.jetbrains.com/help/idea/big-data-tools-spark-submit.html
-
+https://www.linkedin.com/pulse/running-spark-application-using-intellij-murali-poola
 
 
 
