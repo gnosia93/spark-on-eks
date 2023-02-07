@@ -18,6 +18,12 @@ metadata:
 ```
 
 ```
+$ kubectl config get-contexts
+CURRENT   NAME                                             CLUSTER                                 AUTHINFO                                         NAMESPACE
+          docker-desktop                                   docker-desktop                          docker-desktop
+*         hopigaga@spark-on-eks.ap-northeast-2.eksctl.io   spark-on-eks.ap-northeast-2.eksctl.io   hopigaga@spark-on-eks.ap-northeast-2.eksctl.io
+(base) soonbeom@bcd07468d10a spark-on-eks %
+
 $ kubectl create -f spark.yaml
 $ kubectl apply -f spark.yaml
 ```
