@@ -27,6 +27,8 @@ Preferences > Plugins 에서 인텔리J 스칼러 플러그인을 설치한다.
 ### 1. 프로젝트 생성하기 ###
 
 프로젝트 생성화면 에서 아래 화면과 같이 설정 한 후 신규 프로젝트를 생성한다.
+
+![](https://github.com/gnosia93/spark-on-eks/blob/main/images/intelij-new-project.png)
  
 ### 2. build.sbt 파일 생성하기 ###
 
