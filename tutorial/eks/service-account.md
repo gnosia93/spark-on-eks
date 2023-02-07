@@ -31,7 +31,7 @@ spec:
 
 
 ```
-$ kubectl apply -f https://k8s.io/examples/application/shell-demo.yaml
+$ kubectl apply -f shell.yaml
 
 $ kubectl exec --stdin --tty shell-demo -- /bin/bash
 
