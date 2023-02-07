@@ -161,7 +161,7 @@ assemblyMergeStrategy in assembly := {
   case x => MergeStrategy.first
 }
 ```
-터미널 창에서 sbt assembly 명령어를 수행하여, fat jar 를 만든다. SparkySpark/target/scala-2.13/SparkySpark-assembly-0.1.0-SNAPSHOT.jar 파일이 생성되었다. 
+인텔리J 의 하단 터미널 창에서 sbt assembly 명령어를 수행하여, fat jar 를 만든다. SparkySpark/target/scala-2.13/SparkySpark-assembly-0.1.0-SNAPSHOT.jar 파일이 생성되었다. 
 ```
 (base) SparkySpark $ sbt assembly -J-Xmx4G -J-Xms4G
 
