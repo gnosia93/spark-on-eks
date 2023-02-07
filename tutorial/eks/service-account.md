@@ -22,6 +22,8 @@ spec:
   - name: aws-cli
     image: registry.hub.docker.com/amazon/aws-cli:latest
 ```
+
+$ kubectl config use-context name-of-account@spark-on-eks.ap-northeast-2.eksctl.io
 $ kubectl apply -f aws-cli.yaml
 
 ````
