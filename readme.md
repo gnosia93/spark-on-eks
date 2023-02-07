@@ -15,7 +15,7 @@
 
 * [6. 분석 어플리케이션 개발하기](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/6.spark-app-s3.md)
 
-* [7. eks 에 분석 어플리케이션 배포하기](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/7.spark-app-deploy.md)
+* [7. eks에 어플리케이션 배포하기](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/7.spark-app-deploy.md)
 
 
 ## 참고자료 ##
