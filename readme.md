@@ -24,4 +24,4 @@
 * https://github.com/jadianes/spark-py-notebooks
 * https://sparkbyexamples.com/spark/how-to-create-an-rdd-using-parallelize/
 * https://kubernetes.io/ko/
-* https://www.eksworkshop.com/
+* https://www.eksworkshop.com/ 
