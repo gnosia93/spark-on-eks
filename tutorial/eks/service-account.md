@@ -1,6 +1,6 @@
 ## IAM 서비스 어카운트 설정 하기 ##
 
-* https://coldcode.tistory.com/2
+https://levelup.gitconnected.com/using-iam-roles-to-allow-the-pods-in-aws-eks-to-read-the-aws-s3-bucket-be493fbdda84 문서에 따라 설정한다.
 
 
 ## 테스트 ##
@@ -65,7 +65,7 @@ metadata:
 
 ## 참고자료 ##
 
-* https://levelup.gitconnected.com/using-iam-roles-to-allow-the-pods-in-aws-eks-to-read-the-aws-s3-bucket-be493fbdda84
+
 
 * https://dev.to/aws-builders/working-with-eks-using-iam-and-native-k8s-service-accounts-to-access-aws-s3-3e20
 
