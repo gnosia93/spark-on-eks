@@ -26,4 +26,22 @@ CURRENT   NAME                                             CLUSTER              
 
 $ kubectl create -f spark.yaml
 $ kubectl apply -f spark.yaml
+
+$ kubectl get sa spark
+NAME    SECRETS   AGE
+spark   0         2d12h
+
+$ kubectl get sa spark -o yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::509076023497:role/SparkOnEKS-S3Role
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"ServiceAccount","metadata":{"annotations":{"eks.amazonaws.com/role-arn":"arn:aws:iam::509076023497:role/SparkOnEKS-S3Role"},"name":"spark","namespace":"default"}}
+  creationTimestamp: "2023-02-04T11:51:07Z"
+  name: spark
+  namespace: default
+  resourceVersion: "678950"
+  uid: 10f033ff-73ef-4a32-93ba-ca2e797f46af
 ```
