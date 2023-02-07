@@ -64,7 +64,16 @@ sbt 가 관련 자바 패키지를 다운로드 할 수 있도록 한다.
 
 ![](https://github.com/gnosia93/spark-on-eks/blob/main/images/intelij-sparky-spark.png)
 
-### 4. 우버 Jar 생성 ###
+
+
+### 4. 로컬 모드로 테스트 하기 ###
+
+https://www.jetbrains.com/help/idea/big-data-tools-spark-submit.html
+
+
+
+
+### 5. 우버 Jar 생성 ###
  
 우버 jar를 생성하기 위해 sbt-asssembly 패키지를 사용합니다. Project[SparkySpark-Build] 디렉토리 밑에 아래 내용으로 assemby.sbt 를 생성하고, build.sbt 에는 아래와 같이 Merge 룰을 추가합니다. Merge 룰은 jar 파일 패킹시에 동일한 이름을 가진 파일을 발견했을때 어떻게 처리할지를 결정합니다.
  
@@ -137,10 +146,7 @@ assemblyMergeStrategy in assembly := {
 (base) SparkySpark $ 
 ```
 
-### 5. 어플리케이션 실행하기 ###
-```
-$ java -jar /Users/soonbeom/IdeaProjects/SparkySpark/target/scala-2.13/SparkySpark-assembly-0.1.0-SNAPSHOT.jar
-```
+
 
 ## 참고자료 ##
 * https://cloud.google.com/dataproc/docs/guides/manage-spark-dependencies?hl=ko
