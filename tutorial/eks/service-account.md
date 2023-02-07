@@ -29,13 +29,7 @@ $ kubectl config use-context name-of-account@spark-on-eks.ap-northeast-2.eksctl.
 
 $ kubectl apply -f nginx.yaml
 
-````
-$ kubectl get pod aws
-
-NAME                                READY   STATUS    RESTARTS   AGE
-jenkins-8498fcb9b5-8k8b8         1/1     Running   0          40m
-
-$ kubectl exec -it  jenkins-8498fcb9b5-8k8b8 -- /bin/bash
+$ kubectl exec -it  nginx -- /bin/bash
 ```
 
 ## 설정 ##
