@@ -5,8 +5,8 @@
 
 ## 테스트 ##
 
-AWS CLI 가 설치되어 있는 컨테이너 이미지로, 파드를 생성하고, private S3 에서 대해서 ls 를 수행한다.
-생성된 서비스 어카운트가 제대로 동작하는지 테스트 한다.
+서비스 어카운트 값이 spark 인 nginx yaml 로 컨테이너를 생성 한후, 아래와 같이 aws ls 명령어가 수행가능 한지 여부를 판단한다.
+수행되는 경우 IAM 서비스 어카운트 설정이 완료 된 것이다.
 
 [shell.yaml]
 ```
@@ -28,7 +28,6 @@ spec:
   dnsPolicy: Default
   serviceAccount: spark
 ```
-
 
 ```
 $ kubectl apply -f shell.yaml
