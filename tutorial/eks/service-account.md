@@ -45,3 +45,9 @@ metadata:
   resourceVersion: "678950"
   uid: 10f033ff-73ef-4a32-93ba-ca2e797f46af
 ```
+
+컨피그맵
+```
+$ kubectl describe configmap spark-drv-3ba9488626b0e079-conf-map
+$ kubectl describe configmap spark-conf-volume-driver
+```
