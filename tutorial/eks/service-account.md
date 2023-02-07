@@ -5,3 +5,18 @@
 * https://brunch.co.kr/@topasvga/1885
 
 
+
+
+```
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+ name: spark
+ namespace: default
+ annotations:
+   eks.amazonaws.com/role-arn:  arn:aws:iam::509076023497:role/SparkOnEKS-S3Role
+```
+
+```
+$ kubectl create -f my-sa.yaml
+```
