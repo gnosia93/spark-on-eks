@@ -101,13 +101,9 @@ object SparkySpark {
     // Thread.sleep(1000000)
   }
 }
-
 ```
 
-### 4. 로컬 모드로 테스트 하기 ###
-
-https://www.linkedin.com/pulse/running-spark-application-using-intellij-murali-poola
-
+.master("local") 호출은 IDE 로 개발 및 디버깅용으로 유용한 부분이다. 우버 Jar 생성시 해당 부분은 주석 처리하고 생성한다.
 
 
 ### 5. 우버 Jar 생성 ###
