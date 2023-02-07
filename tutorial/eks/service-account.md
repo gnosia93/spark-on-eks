@@ -48,6 +48,12 @@ root@ip-192-168-8-112:/# unzip awscliv2.zip
 
 root@ip-192-168-8-112:/# ./aws/install
 You can now run: /usr/local/bin/aws --version
+
+root@ip-192-168-80-19:/# aws s3 ls
+...
+2021-06-30 06:55:34 sagemaker-ap-northeast-2-509076023497
+2021-07-30 00:44:45 sagemaker-studio-509076023497-58hjm8wua5j
+2023-02-05 01:35:49 spark-on-eks-soonbeom
 ```
 
 ## 설정 ##
