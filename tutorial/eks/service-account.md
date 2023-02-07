@@ -6,7 +6,7 @@
 
 
 
-
+[spark.yaml]
 ```
 apiVersion: v1
 kind: ServiceAccount
@@ -19,4 +19,5 @@ metadata:
 
 ```
 $ kubectl create -f spark.yaml
+$ kubectl apply -f spark.yaml
 ```
