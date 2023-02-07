@@ -8,6 +8,9 @@
 AWS CLI 가 설치되어 있는 컨테이너 이미지로, 파드를 생성하고, private S3 에서 대해서 ls 를 수행한다.
 생성된 서비스 어카운트가 제대로 동작하는지 테스트 한다.
 
+* docker pull amazon/aws-cli:latest
+* docker pull registry.hub.docker.com/amazon/aws-cli:latest
+
 ```
 
 ```
