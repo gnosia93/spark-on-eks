@@ -35,19 +35,11 @@ $ kubectl apply -f shell.yaml
 
 $ kubectl exec --stdin --tty shell-demo -- /bin/bash
 
-root@ip-192-168-8-112:/# uname -a
-Linux ip-192-168-8-112.ap-northeast-2.compute.internal 5.4.228-131.415.amzn2.x86_64 #1 SMP Tue Dec 20 12:51:02 UTC 2022 x86_64 GNU/Linux
-
-root@ip-192-168-8-112:/# curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-
-root@ip-192-168-8-112:/# apt update && apt upgrade
-
-root@ip-192-168-8-112:/# apt install unzip
-
-root@ip-192-168-8-112:/# unzip awscliv2.zip
-
-root@ip-192-168-8-112:/# ./aws/install
-You can now run: /usr/local/bin/aws --version
+root@ip-192-168-8-112:/# curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
+                         apt update && apt upgrade && \
+                         apt install unzip && \
+                         unzip awscliv2.zip && \
+                         ./aws/install
 
 root@ip-192-168-80-19:/# aws s3 ls
 ...
