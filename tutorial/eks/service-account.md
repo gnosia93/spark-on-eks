@@ -2,6 +2,20 @@
 
 https://levelup.gitconnected.com/using-iam-roles-to-allow-the-pods-in-aws-eks-to-read-the-aws-s3-bucket-be493fbdda84 문서에 따라 설정한다.
 
+spark 서비스 어카운트에 위의 과정에서 생성된 Role을 바인딩 한다.
+[spark.yaml]
+```
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+ name: spark
+ namespace: default
+ annotations:
+   eks.amazonaws.com/role-arn:  arn:aws:iam::xxxxxx:role/SparkOnEKS-S3Role
+```
+$ kubectl apply -f spark.yaml 
+
+
 
 ## 테스트 ##
 
@@ -47,18 +61,6 @@ root@ip-192-168-80-19:/# aws s3 ls
 2023-02-05 01:35:49 spark-on-eks-soonbeom
 ```
 
-## 설정 ##
-
-[spark.yaml]
-```
-apiVersion: v1
-kind: ServiceAccount
-metadata:
- name: spark
- namespace: default
- annotations:
-   eks.amazonaws.com/role-arn:  arn:aws:iam::509076023497:role/SparkOnEKS-S3Role
-```
 
 
 
