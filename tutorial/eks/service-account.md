@@ -49,5 +49,44 @@ metadata:
 컨피그맵
 ```
 $ kubectl describe configmap spark-drv-3ba9488626b0e079-conf-map
-$ kubectl describe configmap spark-conf-volume-driver
+% kubectl describe configmap spark-drv-3ba9488626b0e079-conf-map
+Name:         spark-drv-3ba9488626b0e079-conf-map
+Namespace:    default
+Labels:       <none>
+Annotations:  <none>
+
+Data
+====
+spark.kubernetes.namespace:
+----
+default
+spark.properties:
+----
+#Java properties built from Kubernetes config map with name: spark-drv-3ba9488626b0e079-conf-map
+#Mon Feb 06 21:26:11 KST 2023
+spark.driver.port=7078
+spark.master=k8s\://https\://FC91D79A06A89466662783481F8328C7.gr7.ap-northeast-2.eks.amazonaws.com
+spark.submit.pyFiles=
+spark.app.name=sparky-spark-app
+spark.kubernetes.resource.type=java
+spark.submit.deployMode=cluster
+spark.driver.host=sparky-spark-app-3b69a48626b0db6c-driver-svc.default.svc
+spark.driver.blockManager.port=7079
+spark.app.id=spark-32e062565f0a426598dd7f7c508994d5
+spark.app.submitTime=1675686370063
+spark.kubernetes.container.image=public.ecr.aws/o5l1c9o9/sparky-spark-app\:latest
+spark.kubernetes.memoryOverheadFactor=0.1
+spark.kubernetes.submitInDriver=true
+spark.kubernetes.context=hopigaga@spark-on-eks.ap-northeast-2.eksctl.io
+spark.kubernetes.authenticate.driver.serviceAccountName=spark
+spark.kubernetes.driver.pod.name=sparky-spark-app-3b69a48626b0db6c-driver
+spark.executor.instances=5
+spark.jars=local\:////opt/spark/app/SparkySpark-assembly-0.1.0-SNAPSHOT.jar
+
+
+BinaryData
+====
+
+Events:  <none>
+(base) soonbeom@bcd07468d10a ~ % cd bin
 ```
