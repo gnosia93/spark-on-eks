@@ -64,6 +64,7 @@ sbt 가 관련 자바 패키지를 다운로드 할 수 있도록 한다.
 ### 3. 어플리케이션 코딩 ###
 
 ![](https://github.com/gnosia93/spark-on-eks/blob/main/images/intelij-sparky-spark.png)
+![](https://github.com/gnosia93/spark-on-eks/blob/main/images/s3-authentification.png)
 
 [SparkySpark]
 ```
