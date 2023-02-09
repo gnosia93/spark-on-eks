@@ -35,4 +35,8 @@ Unable to locate credentials. You can configure credentials by running "aws conf
 ```
 $ export SPARK_HOME=~/spark-3.3.1-bin-hadoop3
 
+$ cd /Users/soonbeom/spark-on-eks/app
+
+$ scp SparkySpark-assembly-0.1.0-SNAPSHOT.jar ec2-user@ec2-3-38-202-76.ap-northeast-2.compute.amazonaws.com:~
+
 ```
