@@ -1,3 +1,5 @@
+* https://blog.banksalad.com/tech/spark-on-kubernetes/
+
 ***
 spark conf 에 인증정보를 넣고 해야 겠다. ㅜㅜ
 
