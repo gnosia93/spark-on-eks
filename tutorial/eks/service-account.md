@@ -1,6 +1,6 @@
 ## IAM 서비스 어카운트 ##
 
-* https://levelup.gitconnected.com/using-iam-roles-to-allow-the-pods-in-aws-eks-to-read-the-aws-s3-bucket-be493fbdda84 문서를 참고 하여 관련 설정을 한다. S3 버킷에 대한 접근 권한 설정시 List, Get, Put 모두 설정한다.
+* https://levelup.gitconnected.com/using-iam-roles-to-allow-the-pods-in-aws-eks-to-read-the-aws-s3-bucket-be493fbdda84 문서를 참고 하여 관련 오브젝트를 생성하고, S3 버킷에 대한 접근 권한 설정시 아래 Polocy를 적용한다.
 
 [SparkOnEKS-S3Polocy]
 ```
