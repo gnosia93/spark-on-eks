@@ -13,4 +13,8 @@ $ cd; wget https://dlcdn.apache.org/spark/spark-3.3.1/spark-3.3.1-bin-hadoop3.tg
 $ tar xvfz spark-3.3.1-bin-hadoop3.tgz 
 
 $ cd spark-3.3.1-bin-hadoop3
+
+$ sudo yum install java-1.8.0-openjdk
+
+$ java -version
 ```
