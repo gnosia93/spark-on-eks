@@ -7,4 +7,10 @@ ec2 에 spark 을 인스톨해서 403 에러가 발생하는지 테스트 해 �
 ```
 % ssh -i aws-kp.pem ec2-user@ec2-3-38-202-76.ap-northeast-2.compute.amazonaws.com
 
+
+$ cd; wget https://dlcdn.apache.org/spark/spark-3.3.1/spark-3.3.1-bin-hadoop3.tgz
+
+$ tar xvfz spark-3.3.1-bin-hadoop3.tgz 
+
+$ cd spark-3.3.1-bin-hadoop3
 ```
