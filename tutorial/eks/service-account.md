@@ -92,6 +92,8 @@ spec:
 $ kubectl create -f s3-isa.yaml
 
 $ kubectl logs s3-isa my-aws-cli -n default
+...
+2023-02-05 01:35:49 spark-on-eks-soonbeom
 ```
 
 
