@@ -61,6 +61,36 @@ $ kubectl apply -f spark.yaml
 
 ## 테스트 ##
 
+[s3-isa.yaml]
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: s3-isa
+  name: s3-isa
+  namespace: default
+spec:
+  serviceAccountName: spark
+  initContainers:
+  - image: amazon/aws-cli
+    name: my-aws-cli
+    command: ['aws', 's3', 'ls', '/']
+  containers:
+  - image: nginx
+    name: s3-isa
+    ports:
+    - containerPort: 80
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+```
+$ kubectl create -f s3-isa.yaml
+$ kubectl logs my-pod my-aws-cli -n dev
+
+
+
+## 테스트 2 ##
+
 서비스 어카운트 값이 spark 인 nginx yaml 로 컨테이너를 생성 한후, 아래와 같이 s3의 read, write 가능 여부를 테스트 한다.
 오류 없이 수행되는 경우, 정책값이 제대로 설정된 것이다. 컨테이너에서 bash 를 실행중인 상태에서 S3 정책을 수정하는 경우, 컨테이너에서 빠져나와서 bash 를 재 실행해야 한다.   
 
