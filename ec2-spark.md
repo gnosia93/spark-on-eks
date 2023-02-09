@@ -1,5 +1,5 @@
 ***
-local conf
+spark conf 에 인증정보를 넣고 해야 겠다. ㅜㅜ
 
 https://jhleeeme.github.io/read-aws-s3-data-on-spark/
 
