@@ -1,3 +1,16 @@
+***
+local conf
+
+https://jhleeeme.github.io/read-aws-s3-data-on-spark/
+
+****
+
+
+
+
+
+
+
 * https://sungminoh.github.io/posts/development/use-s3-for-spark/
 
 * https://github.com/skyer9/spark-with-ec2-s3/blob/master/get-file-from-s3-with-scala.md
