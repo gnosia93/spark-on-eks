@@ -84,9 +84,12 @@ spec:
   dnsPolicy: ClusterFirst
   restartPolicy: Always
 ```
-$ kubectl create -f s3-isa.yaml
-$ kubectl logs my-pod my-aws-cli -n dev
 
+```
+$ kubectl create -f s3-isa.yaml
+
+$ kubectl logs s3-isa my-aws-cli -n default
+```
 
 
 ## 테스트 2 ##
