@@ -30,3 +30,9 @@ Unable to locate credentials. You can configure credentials by running "aws conf
 
 // 그림1 (role)
 // 그림2 (policy)
+
+
+```
+$ export SPARK_HOME=~/spark-3.3.1-bin-hadoop3
+
+```
