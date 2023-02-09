@@ -68,28 +68,36 @@ sbt 가 관련 자바 패키지를 다운로드 할 수 있도록 한다.
 
 [SparkySpark]
 ```
+import com.amazonaws.services.s3.internal.AWSS3V4Signer
 import org.apache.spark.sql.SparkSession
 
 object SparkySpark {
 
   def main(args: Array[String]): Unit = {
 
-    println("SparkSpark start ... hello v5")
+    println("SparkySpark start ... hello v9")
 
     val spark = SparkSession
       .builder()
       .appName("Sparky Analysis for S3")
       .config("spark.hadoop.fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem")
+
+      // https://yahwang.github.io/posts/84
+      .config("spark.hadoop.fs.s3a.endpoint", "s3.ap-northeast-2.amazonaws.com")
   //    .config("spark.hadoop.fs.s3a.access.key", "xxxxxxx")
   //    .config("spark.hadoop.fs.s3a.secret.key", "yyyy")
 
       // https://hadoop.apache.org/docs/stable/hadoop-aws/tools/hadoop-aws/index.html#Authenticating_with_S3
       .config("fs.s3a.aws.credentials.provider", "org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider," +
               "com.amazonaws.auth.EnvironmentVariableCredentialsProvider," +
-              "com.amazonaws.auth.profile.ProfileCredentialsProvider," +
-              "com.amazonaws.auth.InstanceProfileCredentialsProvider")
-      .master("local")        // 패키징 하기전에 주석 처리해야 한다.
+              "com.amazonaws.auth.InstanceProfileCredentialsProvider," +
+              "com.amazonaws.auth.profile.ProfileCredentialsProvider" )
+   //    .master("local")        // sbt assembly 하기전에 주석 처리해야 한다.
       .getOrCreate()
+
+    // Singnature V4
+    // https://stackoverflow.com/questions/46152202/spark-doesnt-read-write-information-from-s3-responsecode-400-responsemessage
+    System.setProperty("com.amazonaws.services.s3.enableV4", "true");
 
 
     val dataFilePath = "s3a://spark-on-eks-soonbeom/raw/sparkify_event_data.parquet/"
@@ -100,7 +108,7 @@ object SparkySpark {
     println(df.rdd.partitions.length)
     println(df.rdd.partitions.size)
 
-    // Thread.sleep(1000000)
+    spark.stop()
   }
 }
 ```
