@@ -48,3 +48,14 @@ $ scp -i ~/aws-kp.pem SparkySpark-assembly-0.1.0-SNAPSHOT.jar \
 
 ---> 그러면 K8S 관련 설정이 문제인 것으로 예상된다. *****
 
+
+
+** ec2 eks role 검사
+
+
+IAM Role
+ eksctl-spark-on-eks-nodegroup-spa-NodeInstanceRole-FIYEKMFETV5I 
+ 
+  eksctl-spark-on-eks-nodegroup-spa-NodeInstanceRole-FIYEKMFETV5I 
+  
+   eksctl-spark-on-eks-nodegroup-spa-NodeInstanceRole-1H8KFQM987K7X 
