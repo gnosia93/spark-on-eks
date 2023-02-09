@@ -42,3 +42,9 @@ $ scp -i ~/aws-kp.pem SparkySpark-assembly-0.1.0-SNAPSHOT.jar \
   
 [ec2-user@ip-172-31-17-0 ~]$ $SPARK_HOME/bin/spark-submit --master "local[4]" SparkySpark-assembly-0.1.0-SNAPSHOT.jar  
 ```
+
+---> 인스턴스 프로파일로 제대로 동작한다.
+
+
+---> 그러면 K8S 관련 설정이 문제인 것으로 예상된다. *****
+
