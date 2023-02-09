@@ -3,7 +3,10 @@
 * https://levelup.gitconnected.com/using-iam-roles-to-allow-the-pods-in-aws-eks-to-read-the-aws-s3-bucket-be493fbdda84 문서를 참고 하여 관련 설정을 한다. S3 버킷에 대한 접근 권한 설정시 List, Get, Put 모두 설정한다.
 
 ```
-S3 Policy 샘플을 적는다.. >>>
+<<< S3 Policy 샘플을 적는다.. >>>
+
+
+
 ```
 
 
