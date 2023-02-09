@@ -18,3 +18,10 @@ $ sudo yum install java-1.8.0-openjdk
 
 $ java -version
 ```
+
+
+```
+[ec2-user@ip-172-31-17-0 ~]$ aws s3 ls
+Unable to locate credentials. You can configure credentials by running "aws configure".
+[ec2-user@ip-172-31-17-0 ~]$
+```
