@@ -25,3 +25,8 @@ $ java -version
 Unable to locate credentials. You can configure credentials by running "aws configure".
 [ec2-user@ip-172-31-17-0 ~]$
 ```
+
+[SparkOnEKS-EC2Role]
+
+// 그림1 (role)
+// 그림2 (policy)
