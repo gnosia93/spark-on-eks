@@ -25,3 +25,4 @@
 * https://sparkbyexamples.com/spark/how-to-create-an-rdd-using-parallelize/
 * https://kubernetes.io/ko/
 * https://www.eksworkshop.com/ 
+* https://aws.amazon.com/blogs/containers/best-practices-for-running-spark-on-amazon-eks/
