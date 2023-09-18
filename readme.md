@@ -20,12 +20,4 @@
 
 ## 레퍼런스 ##
 
-* https://spark.apache.org/docs/latest/running-on-kubernetes.html
-* https://github.com/jadianes/spark-py-notebooks
-* https://sparkbyexamples.com/spark/how-to-create-an-rdd-using-parallelize/
-* https://kubernetes.io/ko/
-* https://www.eksworkshop.com/ 
-
---
-* https://aws.amazon.com/blogs/containers/best-practices-for-running-spark-on-amazon-eks/
-* https://archive.eksworkshop.com/advanced/430_emr_on_eks/
+* https://github.com/OBenner/data-engineering-interview-questions/tree/master
