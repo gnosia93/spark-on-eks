@@ -1,5 +1,5 @@
 
-* [pyspark tutorial]()
+* [pyspark tutorial](https://github.com/gnosia93/spark-on-eks/tree/main/pyspark)
 
 ## 실습순서 ##
 
