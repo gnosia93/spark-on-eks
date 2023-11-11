@@ -12,7 +12,8 @@ OpenJDK 64-Bit Server VM Corretto-17.0.8.7.1 (build 17.0.8+7-LTS, mixed mode, sh
 ```
 
 #### pyspark 설치 ####
-
 ![](https://github.com/gnosia93/spark-on-eks/blob/main/images/pyspark-install.png)
 
 
+#### pycharm pyspark 설치 ####
+![](https://github.com/gnosia93/spark-on-eks/blob/main/images/pycharm-pyspark.png)
