@@ -1,6 +1,6 @@
 
 ## Spark 개발 ##
-* [#1. 개발환경설정](https://github.com/gnosia93/spark-on-eks/blob/main/mac.md)
+* [#1. 개발환경 설정](https://github.com/gnosia93/spark-on-eks/blob/main/mac.md)
 * [pyspark tutorial](https://github.com/gnosia93/spark-on-eks/tree/main/pyspark)
 
 ## 실습순서 ##
