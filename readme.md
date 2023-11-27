@@ -5,11 +5,6 @@
 
 ## 실습순서 ##
 
-* EKS
-* EMR
-* EMR Serverless
-* Glue
-
 
 * [1. 도커 데스크탑 설치하기](https://github.com/gnosia93/spark-on-eks/blob/main/tutorial/1.docker-desktop-k8s.md)
 
